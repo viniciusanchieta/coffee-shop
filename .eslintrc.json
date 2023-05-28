@@ -1,0 +1,54 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react", "prettier", "import-helpers"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2020
+  },
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "quoteProps": "as-needed",
+        "trailingComma": "none",
+        "singleQuote": true,
+        "jsxSingleQuote": true,
+        "useTabs": false,
+        "tabWidth": 2
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": "off",
+    "import/export": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "never",
+        "groups": [
+          "module",
+          "/^~/domain/",
+          "/^~/data/",
+          "/^~/infra/",
+          "/^~/main/",
+          "/^~/presentation/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": false
+        }
+      }
+    ]
+  }
+}

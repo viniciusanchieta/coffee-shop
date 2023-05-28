@@ -1,22 +1,13 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {
   Image,
   SafeAreaView,
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 import theme from './src/presentation/common/themes/theme';
-// import imageCoffee from './src/presentation/common/imgs/coffee.png'
 
 function App(): JSX.Element {
   return (
@@ -29,10 +20,10 @@ function App(): JSX.Element {
       </View>
       <View>
         <Text style={styles.textMain}>
-        Coffee so good, your taste buds will love it.
+          Coffee so good, your taste buds will love it.
         </Text>
         <Text style={styles.descriptionMain}>
-        The best grain, the finest roast, the powerful flavor.
+          The best grain, the finest roast, the powerful flavor.
         </Text>
       </View>
       <View>
@@ -48,18 +39,18 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.colors.black,
     width: '100%',
-    height: '100%',
+    height: '100%'
   },
   imgMain: {
     width: '100%',
-    marginTop: -200,
+    marginTop: -200
   },
-  textMain: { 
+  textMain: {
     color: theme.colors.white,
     textAlign: 'center',
     fontSize: 34,
     paddingHorizontal: 36,
-    fontFamily: theme.fonts.semiBold,
+    fontFamily: theme.fonts.semiBold
   },
   descriptionMain: {
     color: theme.colors.gray[100],
@@ -67,7 +58,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40,
     fontSize: 14,
     fontFamily: theme.fonts.regular,
-    marginTop: 15,
+    marginTop: 15
   },
   buttonMain: {
     backgroundColor: theme.colors.brown[100],
@@ -76,13 +67,13 @@ const styles = StyleSheet.create({
     height: 62,
     borderRadius: 16,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   textButtonMain: {
     color: theme.colors.white,
     fontFamily: theme.fonts.semiBold,
-    fontSize: 16,
-  },
+    fontSize: 16
+  }
 });
 
 export default App;
