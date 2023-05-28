@@ -8,7 +8,6 @@
   "extends": [
     "plugin:react/recommended",
     "plugin:prettier/recommended",
-    "plugin:@react-native-community/eslint-config",
     "prettier"
   ],
   "ignorePatterns": [".eslintrc.json"],
